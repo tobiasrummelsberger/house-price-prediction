@@ -3,6 +3,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.externals import joblib
 import pandas as pd
 import math
+from sklearn.decomposition import PCA
+
 def impute_missing_values(X_train, X_test, path):
     categorical_features = list(X_train.select_dtypes(include=['object']))
     numerical_features = list(X_train.select_dtypes(include=['integer', 'float']))
@@ -21,8 +23,6 @@ def impute_missing_values(X_train, X_test, path):
     X_train = pd.concat([X_train, X_train_imputed], axis=1)
 
     return X_train, X_test
-
-
 
 def one_hot_encoding(X_train, X_test, path):
     categorical_features = list(X_train.select_dtypes(include=['object']))
@@ -62,6 +62,39 @@ def one_hot_encoding(X_train, X_test, path):
                                             columns=[feature+'_'])
         X_test = pd.concat([X_test, binarized_values], axis=1)
         X_test.drop(columns=feature, inplace=True)
+
+    return X_train, X_test
+
+def principal_component_analysis(X_train, X_test, path):
+    features = [feature[:feature.find('_')] for feature in list(X_train)]
+    features = set(features)
+
+    pca_path = str(path+'obj/principal_component_analysis/pca_{feature}.pkl')
+
+    pca_feature_dict = dict()
+
+    for feature in features:
+        feature_classes = [class_ for class_ in list(X_train) if class_[:len(feature)] == feature]
+        if len(feature_classes) > 3:
+            pca_feature_dict[feature] = feature_classes
+            #pca = PCA(n_components='mle', svd_solver='full')
+            pca = PCA()
+            pca.fit(X_train[feature_classes])
+            joblib.dump(pca, pca_path.format(feature=feature))
+
+    for feature in pca_feature_dict:
+        pca = joblib.load(pca_path.format(feature=feature))
+        pca_features = pd.DataFrame(data=pca.transform(X_train[pca_feature_dict[feature]]),
+                                        index=X_train.index)
+                                        #columns=[feature+'_'+class_ for class_ in list(pca.transform(X_train[pca_feature_dict[feature]]))])
+        X_train = pd.concat([X_train, pca_features], axis=1)
+
+    for feature in pca_feature_dict:
+        pca = joblib.load(pca_path.format(feature=feature))
+        pca_features = pd.DataFrame(data=pca.transform(X_test[pca_feature_dict[feature]]),
+                                        index=X_test.index)
+                                        #columns=[feature+'_'+class_ for class_ in list(pca.transform(X_train[pca_feature_dict[feature]]))])
+        X_test = pd.concat([X_test, pca_features], axis=1)
 
     return X_train, X_test
 
@@ -130,13 +163,11 @@ def preprocess_FireplaceQu(X_train, X_test):
 
     return X_train, X_test
 
-
 def preprocess_GarageType(X_train, X_test):
     X_train['GarageType'].fillna(value='None', inplace=True)
     X_test['GarageType'].fillna(value='None', inplace=True)
 
     return X_train, X_test
-
 
 def preprocess_GarageFinish(X_train, X_test):
     X_train['GarageFinish'].fillna(value='None', inplace=True)
@@ -149,7 +180,6 @@ def preprocess_GarageQual(X_train, X_test):
     X_test['GarageQual'].fillna(value='None', inplace=True)
 
     return X_train, X_test
-
 
 def preprocess_GarageCond(X_train, X_test):
     X_train['GarageCond'].fillna(value='None', inplace=True)
