@@ -2,54 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ca50cc0-9bcc-48d1-9951-3c6e2217b6c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pipeline.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_BldgType.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_BsmtCond.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_BsmtExposure.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_BsmtFinType1.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_BsmtFinType2.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_BsmtQual.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_CentralAir.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Condition1.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Condition2.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Electrical.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_ExterCond.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_ExterQual.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Exterior1st.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Exterior2nd.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Fence.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_FireplaceQu.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Foundation.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Functional.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_GarageCond.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_GarageFinish.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_GarageQual.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_GarageType.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Heating.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_HeatingQC.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_HouseStyle.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_KitchenQual.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_LandContour.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_LandSlope.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_LotConfig.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_LotShape.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_MSZoning.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_MasVnrType.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_MiscFeature.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Neighborhood.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_PavedDrive.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_PoolQC.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_RoofMatl.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_RoofStyle.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_SaleCondition.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_SaleType.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Street.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Utilities.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Pipeline-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipeline Prototype.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipeline.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Pipeline.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/binarizer/binarizer_Condition2.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Condition2.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/binarizer/binarizer_Electrical.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Electrical.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/binarizer/binarizer_ExterCond.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_ExterCond.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/binarizer/binarizer_Exterior1st.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Exterior1st.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/binarizer/binarizer_Functional.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Functional.pkl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature_preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="-805">
               <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
@@ -95,11 +55,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="63" lean-forward="true" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Pipeline.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="7" />
             </state>
           </provider>
         </entry>
@@ -132,10 +101,11 @@
         <option value="$PROJECT_DIR$/Untitled.ipynb" />
         <option value="$PROJECT_DIR$/feature_preprocessing.py" />
         <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/Pipeline.ipynb" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -239,16 +209,6 @@
     <entry file="file://$USER_HOME$/AppData/Roaming/jupyter/runtime/nbserver-107932-open.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/feature_preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Untitled.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -256,17 +216,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pipeline.ipynb">
+    <entry file="file://$PROJECT_DIR$/Pipeline Prototype.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/feature_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-805">
+          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="63" lean-forward="true" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipeline.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="7" />
         </state>
       </provider>
     </entry>
