@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ca50cc0-9bcc-48d1-9951-3c6e2217b6c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipeline.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Pipeline.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature_preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/load_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,12 +16,12 @@
     <session id="-694168321">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="461" />
+          <entry key="py" value="510" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="461" />
+          <entry key="Python" value="510" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/load_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="19" selection-start-line="10" selection-end-line="11" />
+            <state relative-caret-position="210">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -57,23 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feature_preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -103,12 +91,12 @@
       <list>
         <option value="$PROJECT_DIR$/exploratory_data_analysis/plot_correlation_matrix.py" />
         <option value="$PROJECT_DIR$/exploratory_data_analysis/eda.py" />
-        <option value="$PROJECT_DIR$/load_data.py" />
         <option value="$PROJECT_DIR$/obj/feature_preprocessing.py" />
         <option value="$PROJECT_DIR$/Untitled.ipynb" />
         <option value="$PROJECT_DIR$/Pipeline.ipynb" />
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/feature_preprocessing.py" />
+        <option value="$PROJECT_DIR$/load_data.py" />
       </list>
     </option>
   </component>
@@ -213,16 +201,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/load_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" selection-start-line="10" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -230,13 +208,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/load_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/feature_preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>

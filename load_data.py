@@ -14,8 +14,8 @@ def load_data(train_path, train_key='SalePrice'):
           " numerical features. The train data set contains {train_items} rows and the test data set contains "
           "{test_items} rows.".format(number_categorical_features=len(categorical_features),
                                       number_numerical_features=len(numerical_features),
-                                      train_items = X_train.shape[1],
-                                      test_items = X_test.shape[1]
+                                      train_items = X_train.shape[0],
+                                      test_items = X_test.shape[0]
                                       ))
     print("The categorical features are {categorical_features} and the numerical features are "
           "{numerical_features}".format(categorical_features=str(categorical_features),

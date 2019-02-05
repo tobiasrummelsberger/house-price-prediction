@@ -115,10 +115,9 @@ def preprocess_MSZoning(X_train, X_test):
     return X_train, X_test
 
 def preprocess_LotFrontage(X_train, X_test):
-    LotFrontage_by_Neighborhood = X_train.groupby(['Neighborhood']).median()
-    LotFrontage_by_Neighborhood = pd.DataFrame(data=[list(LotFrontage_by_Neighborhood), LotFrontage_by_Neighborhood.keys()],
-                                               columns=['LotFrontage_median', 'Neighborhood'])
-    print(LotFrontage_by_Neighborhood)
+    LotFrontage_by_Neighborhood = X_train.groupby(['Neighborhood'])['LotFrontage'].median()
+    LotFrontage_by_Neighborhood = pd.DataFrame(data=LotFrontage_by_Neighborhood)
+
     X_train.drop(columns=['LotFrontage'], inplace=True)
     X_train = X_train.join(other=LotFrontage_by_Neighborhood,
                            on='Neighborhood',
