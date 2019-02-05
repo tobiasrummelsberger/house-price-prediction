@@ -1,4 +1,4 @@
-from sklearn.preprocessing import MultiLabelBinarizer
+from sklearn.preprocessing import LabelBinarizer
 from sklearn.impute import SimpleImputer
 from sklearn.externals import joblib
 import pandas as pd
@@ -27,39 +27,41 @@ def impute_missing_values(X_train, X_test, path):
 def one_hot_encoding(X_train, X_test, path):
     categorical_features = list(X_train.select_dtypes(include=['object']))
 
-    binarizer_path = str(path+'binarizer_{feature}.pkl')
+    binarizer_path = str(path+'obj/binarizer/binarizer_{feature}.pkl')
 
     # train binarizer
     for feature in categorical_features:
-        binarizer = MultiLabelBinarizer()
+        binarizer = LabelBinarizer()
         binarizer.fit(X_train[feature])
         joblib.dump(binarizer, binarizer_path.format(feature=feature))
 
     for feature in categorical_features:
         binarizer = joblib.load(binarizer_path.format(feature=feature))
-        if len(binarizer.classes_) > 1:
+        columns = [feature+'_'+class_ for class_ in binarizer.classes_]
+        if len(binarizer.classes_) > 2:
             binarized_values = pd.DataFrame(data=binarizer.transform(X_train[feature]),
                                             index=X_train.index,
-                                            columns=binarizer.classes)
+                                            columns=columns)
         else:
             binarized_values = pd.DataFrame(data=binarizer.transform(X_train[feature]),
                                             index=X_train.index,
-                                            columns=feature)
+                                            columns=[feature+'_'])
         X_train = pd.concat([X_train, binarized_values], axis=1)
-        X_train.drop(columns=feature)
+        X_train.drop(columns=feature, inplace=True)
 
     for feature in categorical_features:
         binarizer = joblib.load(binarizer_path.format(feature=feature))
-        if len(binarizer.classes) > 1:
+        columns = [feature + '_' + class_ for class_ in binarizer.classes_]
+        if len(binarizer.classes_) > 2:
             binarized_values = pd.DataFrame(data=binarizer.transform(X_test[feature]),
                                             index=X_test.index,
-                                            columns=binarizer.classes)
+                                            columns=columns)
         else:
             binarized_values = pd.DataFrame(data=binarizer.transform(X_test[feature]),
                                             index=X_test.index,
-                                            columns=feature)
+                                            columns=[feature+'_'])
         X_test = pd.concat([X_test, binarized_values], axis=1)
-        X_test.drop(columns=feature)
+        X_test.drop(columns=feature, inplace=True)
 
     return X_train, X_test
 
