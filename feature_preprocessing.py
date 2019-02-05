@@ -53,6 +53,7 @@ def one_hot_encoding(X_train, X_test, path):
         binarizer = joblib.load(binarizer_path.format(feature=feature))
         columns = [feature + '_' + class_ for class_ in binarizer.classes_]
         if len(binarizer.classes_) > 2:
+            data=binarizer.transform(X_test[feature])
             binarized_values = pd.DataFrame(data=binarizer.transform(X_test[feature]),
                                             index=X_test.index,
                                             columns=columns)
@@ -104,6 +105,12 @@ def preprocess_alley(X_train, X_test):
     X_train['Alley'] = X_train['Alley'].apply(is_alley)
     X_test['Alley'].fillna(value=0, inplace=True)
     X_test['Alley'] = X_test['Alley'].apply(is_alley)
+
+    return X_train, X_test
+
+def preprocess_MSZoning(X_train, X_test):
+    X_train['MSZoning'].fillna(value='None', inplace=True)
+    X_test['MSZoning'].fillna(value='None', inplace=True)
 
     return X_train, X_test
 
@@ -202,5 +209,41 @@ def preprocess_Fence(X_train, X_test):
 def preprocess_MiscFeature(X_train, X_test):
     X_train['MiscFeature'].fillna(value='None', inplace=True)
     X_test['MiscFeature'].fillna(value='None', inplace=True)
+
+    return X_train, X_test
+
+def preprocess_Utilities(X_train, X_test):
+    X_train['Utilities'].fillna(value='None', inplace=True)
+    X_test['Utilities'].fillna(value='None', inplace=True)
+
+    return X_train, X_test
+
+def preprocess_Exterior1st(X_train, X_test):
+    X_train['Exterior1st'].fillna(value='None', inplace=True)
+    X_test['Exterior1st'].fillna(value='None', inplace=True)
+
+    return X_train, X_test
+
+def preprocess_Exterior2nd(X_train, X_test):
+    X_train['Exterior2nd'].fillna(value='None', inplace=True)
+    X_test['Exterior2nd'].fillna(value='None', inplace=True)
+
+    return X_train, X_test
+
+def preprocess_KitchenQual(X_train, X_test):
+    X_train['KitchenQual'].fillna(value='None', inplace=True)
+    X_test['KitchenQual'].fillna(value='None', inplace=True)
+
+    return X_train, X_test
+
+def preprocess_Functional(X_train, X_test):
+    X_train['Functional'].fillna(value='None', inplace=True)
+    X_test['Functional'].fillna(value='None', inplace=True)
+
+    return X_train, X_test
+
+def preprocess_SaleType(X_train, X_test):
+    X_train['SaleType'].fillna(value='None', inplace=True)
+    X_test['SaleType'].fillna(value='None', inplace=True)
 
     return X_train, X_test

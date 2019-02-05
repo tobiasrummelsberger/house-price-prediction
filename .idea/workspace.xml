@@ -3,10 +3,47 @@
   <component name="ChangeListManager">
     <list default="true" id="8ca50cc0-9bcc-48d1-9951-3c6e2217b6c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Pipeline-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Pipeline-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipeline.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Pipeline.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BldgType.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BldgType.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BsmtCond.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BsmtCond.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BsmtExposure.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BsmtExposure.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BsmtFinType1.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BsmtFinType1.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BsmtFinType2.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BsmtFinType2.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BsmtQual.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_BsmtQual.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Condition1.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Condition1.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Condition2.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Condition2.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Electrical.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Electrical.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_ExterCond.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_ExterCond.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_ExterQual.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_ExterQual.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Exterior1st.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Exterior1st.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Exterior2nd.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Exterior2nd.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Fence.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Fence.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Fireplace.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Fireplace.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_FireplaceQu.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_FireplaceQu.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Foundation.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Foundation.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Functional.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Functional.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_GarageCond.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_GarageCond.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_GarageFinish.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_GarageFinish.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_GarageQual.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_GarageQual.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_GarageType.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_GarageType.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Heating.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Heating.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_HeatingQC.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_HeatingQC.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_HouseStyle.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_HouseStyle.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_KitchenQual.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_KitchenQual.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_LandContour.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_LandContour.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_LotConfig.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_LotConfig.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_LotShape.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_LotShape.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_MSZoning.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_MSZoning.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_MasVnrType.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_MasVnrType.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_MiscFeature.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_MiscFeature.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Neighborhood.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_Neighborhood.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_PoolQC.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_PoolQC.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_RoofMatl.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_RoofMatl.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_RoofStyle.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_RoofStyle.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_SaleCondition.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_SaleCondition.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/principal_component_analysis/pca_SaleType.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/principal_component_analysis/pca_SaleType.pkl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,69 +51,41 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-694168321">
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="66" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="66" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exploratory_data_analysis/eda.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/load_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            <state relative-caret-position="150">
+              <caret line="10" column="19" selection-start-line="10" selection-end-line="11" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature_preprocessing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-                <element signature="e#213#981#0" />
-                <element signature="e#3040#3320#0" />
-                <element signature="e#3371#3603#0" />
-                <element signature="e#3653#3797#0" />
-                <element signature="e#3845#3985#0" />
-                <element signature="e#4033#4173#0" />
-                <element signature="e#4225#4373#0" />
-                <element signature="e#4425#4573#0" />
-                <element signature="e#4625#4773#0" />
-                <element signature="e#4823#5102#0" />
-                <element signature="e#5153#5299#0" />
-                <element signature="e#5350#5494#0" />
-                <element signature="e#5547#5695#0" />
-                <element signature="e#5745#5889#0" />
-                <element signature="e#5940#6084#0" />
-                <element signature="e#6130#6266#0" />
-                <element signature="e#6311#6445#0" />
-                <element signature="e#6496#6642#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model.py">
+        <entry file="file://$PROJECT_DIR$/feature_preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="-2583">
+              <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
               <folding>
-                <element signature="e#0#4#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,8 +119,8 @@
         <option value="$PROJECT_DIR$/obj/feature_preprocessing.py" />
         <option value="$PROJECT_DIR$/Untitled.ipynb" />
         <option value="$PROJECT_DIR$/Pipeline.ipynb" />
-        <option value="$PROJECT_DIR$/feature_preprocessing.py" />
         <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/feature_preprocessing.py" />
       </list>
     </option>
   </component>
@@ -177,9 +186,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="809" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -190,7 +200,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32827735" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32914925" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -210,23 +220,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/jupyter/runtime/nbserver-107932-open.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Untitled.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pipeline Prototype.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/jupyter/runtime/nbserver-107932-open.html" />
+    <entry file="file://$PROJECT_DIR$/Untitled.ipynb" />
+    <entry file="file://$PROJECT_DIR$/Pipeline Prototype.ipynb" />
     <entry file="file://$PROJECT_DIR$/Pipeline.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -236,8 +232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/load_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="150">
+          <caret line="10" column="19" selection-start-line="10" selection-end-line="11" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -246,28 +242,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feature_preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
+        <state relative-caret-position="-2583">
+          <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
-            <element signature="e#213#981#0" />
-            <element signature="e#3040#3320#0" />
-            <element signature="e#3371#3603#0" />
-            <element signature="e#3653#3797#0" />
-            <element signature="e#3845#3985#0" />
-            <element signature="e#4033#4173#0" />
-            <element signature="e#4225#4373#0" />
-            <element signature="e#4425#4573#0" />
-            <element signature="e#4625#4773#0" />
-            <element signature="e#4823#5102#0" />
-            <element signature="e#5153#5299#0" />
-            <element signature="e#5350#5494#0" />
-            <element signature="e#5547#5695#0" />
-            <element signature="e#5745#5889#0" />
-            <element signature="e#5940#6084#0" />
-            <element signature="e#6130#6266#0" />
-            <element signature="e#6311#6445#0" />
-            <element signature="e#6496#6642#0" />
           </folding>
         </state>
       </provider>
@@ -276,9 +254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#4#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
