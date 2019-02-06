@@ -11,8 +11,8 @@ def train_gridsearch_cv(model, X_train, y_train, param_grid={}):
     clf = GridSearchCV(cv=3,
                        estimator=model,
                        param_grid=param_grid,
-                       n_jobs=1,
-                       verbose=2)
+                       n_jobs=-1,
+                       verbose=1)
     clf.fit(X=X_train, y=y_train)
 
     return clf.best_estimator_
