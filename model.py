@@ -12,7 +12,11 @@ def train_gridsearch_cv(model, X_train, y_train, param_grid={}):
                        estimator=model,
                        param_grid=param_grid,
                        n_jobs=-1,
-                       verbose=1)
+                       verbose=1,
+                       scoring='neg_mean_squared_error')
     clf.fit(X=X_train, y=y_train)
+
+    print("MSE", -clf.best_score_)
+    print("MAPE:", -negative_mean_absolute_percentage_error(clf.best_estimator_, X_train, y_train))
 
     return clf.best_estimator_
