@@ -12,6 +12,7 @@ numpy = "*"
 ipykernel = "*"
 sklearn = "*"
 xgboost = "*"
+joblib = "*"
 
 [requires]
 python_version = "3.6"

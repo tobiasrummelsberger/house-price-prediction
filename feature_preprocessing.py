@@ -257,3 +257,17 @@ def preprocess_SaleType(X_train, X_test):
     X_test['SaleType'].fillna(value='None', inplace=True)
 
     return X_train, X_test
+
+def preprocess_GarageYrBlt(X_train, X_test):
+    GarageYrBlt_mean = X_train['GarageYrBlt'].mean()
+    X_train['GarageYrBlt'].fillna(value=GarageYrBlt_mean, inplace=True)
+    X_test['GarageYrBlt'].fillna(value=GarageYrBlt_mean, inplace=True)
+
+    return X_train, X_test
+
+def preprocess_MasVnrArea(X_train, X_test):
+    MasVnrArea_mean = X_train[X_train['MasVnrType'] != 'None']['MasVnrArea'].mean()
+    X_train['MasVnrArea'].apply(lambda x: x if x is not None else MasVnrArea_mean)
+    X_test['MasVnrArea'].apply(lambda x: x if x is not None else MasVnrArea_mean)
+
+    return X_train, X_test
