@@ -8,7 +8,7 @@ def negative_mean_absolute_percentage_error(estimator, X, y_true):
 
 def train_gridsearch_cv(model, X_train, y_train, param_grid={}):
 
-    clf = GridSearchCV(cv=3,
+    clf = GridSearchCV(cv=5,
                        estimator=model,
                        param_grid=param_grid,
                        n_jobs=1,

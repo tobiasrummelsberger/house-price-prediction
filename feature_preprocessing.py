@@ -1,4 +1,5 @@
 from sklearn.preprocessing import LabelBinarizer
+from sklearn.preprocessing import StandardScaler
 from sklearn.externals import joblib
 import pandas as pd
 import numpy as np
@@ -57,8 +58,30 @@ def principal_component_analysis(path, *datasets):
                                             index=dataset.index)
                                             #columns=[feature+'_'+class_ for class_ in list(pca.transform(X_train[pca_feature_dict[feature]]))])
             dataset = pd.concat([dataset, pca_features], axis=1)
-
     return datasets
+
+def normalize_features(*datasets):
+    path = '/Users/tobias/PycharmProjects/house-price-prediction'
+    scaler = StandardScaler()
+    scaler_path = str(path + '/obj/scaler/feature_scaler.pkl')
+    scaler.fit(datasets[0])
+    joblib.dump(scaler, scaler_path)
+    for dataset in datasets:
+        dataset = pd.DataFrame(data=scaler.transform(dataset))#,
+                               #columns=list(dataset),
+                               #index=dataset.index)
+    return datasets
+
+def normalize_targets(y_train, y_test):
+    path = '/Users/tobias/PycharmProjects/house-price-prediction'
+    scaler = StandardScaler()
+    scaler_path = str(path + '/obj/scaler/target_scaler.pkl')
+    scaler.fit(np.array(y_train).reshape(-1,1))
+    joblib.dump(scaler, scaler_path)
+    y_train = scaler.transform(np.array(y_train).reshape(-1,1))
+    y_test = scaler.transform(np.array(y_test).reshape(-1,1))
+
+    return y_train, y_test
 
 def preprocess_alley(*datasets):
     is_alley = lambda x: 1 if x is str else 0
@@ -68,8 +91,9 @@ def preprocess_alley(*datasets):
     return datasets
 
 def preprocess_MSZoning(*datasets):
+    most_frequent_MSZoning = datasets[0]['MSZoning'].value_counts().keys()[0]
     for dataset in datasets:
-        dataset['MSZoning'].fillna(value='None', inplace=True)
+        dataset['MSZoning'].fillna(value=most_frequent_MSZoning, inplace=True)
     return datasets
 
 def preprocess_LotFrontage(*datasets):
@@ -165,23 +189,26 @@ def preprocess_Utilities(*datasets):
     return datasets
 
 def preprocess_Exterior1st(*datasets):
+    most_frequent_Exterior1st = datasets[0]['Exterior1st'].value_counts().keys()[0]
     for dataset in datasets:
-        dataset['Exterior1st'].fillna(value='None', inplace=True)
+        dataset['Exterior1st'].fillna(value=most_frequent_Exterior1st, inplace=True)
     return datasets
 
 def preprocess_Exterior2nd(*datasets):
+    most_frequent_Exterior2nd = datasets[0]['Exterior2nd'].value_counts().keys()[0]
     for dataset in datasets:
-        dataset['Exterior2nd'].fillna(value='None', inplace=True)
+        dataset['Exterior2nd'].fillna(value=most_frequent_Exterior2nd, inplace=True)
     return datasets
 
 def preprocess_KitchenQual(*datasets):
+    most_frequent_KitchenQual = datasets[0]['KitchenQual'].value_counts().keys()[0]
     for dataset in datasets:
-        dataset['KitchenQual'].fillna(value='None', inplace=True)
+        dataset['KitchenQual'].fillna(value=most_frequent_KitchenQual, inplace=True)
     return datasets
 
 def preprocess_Functional(*datasets):
     for dataset in datasets:
-        dataset['Functional'].fillna(value='None', inplace=True)
+        dataset['Functional'].fillna(value='Typ', inplace=True)
     return datasets
 
 def preprocess_SaleType(*datasets):
@@ -190,15 +217,17 @@ def preprocess_SaleType(*datasets):
     return datasets
 
 def preprocess_GarageYrBlt(*datasets):
-    GarageYrBlt_mean = datasets[0]['GarageYrBlt'].mean()
+    #GarageYrBlt_mean = datasets[0]['GarageYrBlt'].mean()
     for dataset in datasets:
-        dataset['GarageYrBlt'].fillna(value=GarageYrBlt_mean, inplace=True)
+        #dataset['GarageYrBlt'].fillna(value=GarageYrBlt_mean, inplace=True)
+        dataset['GarageYrBlt'].fillna(value=0, inplace=True)
     return datasets
 
 def preprocess_MasVnrArea(*datasets):
-    MasVnrArea_mean = datasets[0][datasets[0]['MasVnrType'] != 'None']['MasVnrArea'].mean()
+    #MasVnrArea_mean = datasets[0][datasets[0]['MasVnrType'] != 'None']['MasVnrArea'].mean()
     for dataset in datasets:
-        dataset['MasVnrArea'].apply(lambda x: x if x is not None else MasVnrArea_mean)
+        #dataset['MasVnrArea'].apply(lambda x: x if x is not None else MasVnrArea_mean)
+        dataset['MasVnrArea'].apply(lambda x: x if x is not None else 0)
     return datasets
 
 def preprocess_MoSold(*datasets):
@@ -206,4 +235,14 @@ def preprocess_MoSold(*datasets):
         dataset['MoSold_sin'] = np.sin(dataset['MoSold']-1 * (2. * np.pi / 12))
         dataset['MoSold_cos'] = np.cos(dataset['MoSold']-1 * (2. * np.pi / 12))
         dataset.drop(columns=['MoSold'], inplace=True)
+    return datasets
+
+def preprocess_YrSold(*datasets):
+    for dataset in datasets:
+        dataset['YrSold'] = dataset['YrSold'].astype(str)
+    return(datasets)
+
+def calculate_TotalSF(*datasets):
+    for dataset in datasets:
+        dataset['TotalSF'] = dataset['TotalBsmtSF'] + dataset['1stFlrSF'] + dataset['2ndFlrSF']
     return datasets

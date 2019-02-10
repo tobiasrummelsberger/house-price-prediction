@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 
 def load_data(train_path, train_key='SalePrice'):
     data = pd.read_csv(train_path)
+    data = data.query('GrLivArea < 4000 and SalePrice < 300000')
     y = data[train_key]
     X = data.drop(columns=train_key)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
