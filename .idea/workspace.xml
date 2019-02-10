@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ca50cc0-9bcc-48d1-9951-3c6e2217b6c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Pipeline-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Pipeline-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipeline.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Pipeline.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/load_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/binarizer/binarizer_Condition2.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Condition2.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/binarizer/binarizer_Exterior2nd.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Exterior2nd.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/binarizer/binarizer_Heating.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_Heating.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/binarizer/binarizer_MiscFeature.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_MiscFeature.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/binarizer/binarizer_RoofMatl.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/obj/binarizer/binarizer_RoofMatl.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/data/prediction_rf.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/model/RandomForestRegressor.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/obj/model/RandomForestRegressor.joblib" afterDir="false" />
-    </list>
+    <list default="true" id="8ca50cc0-9bcc-48d1-9951-3c6e2217b6c8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="270">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -168,9 +155,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="809" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -181,7 +167,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49964765" visible="true" weight="0.32914925" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49964765" visible="true" weight="0.32914925" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003524" side_tool="true" weight="0.32914925" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32775453" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -250,8 +236,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="270">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
